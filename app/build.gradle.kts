@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.androidskeleton"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.androidskeleton"
@@ -36,6 +36,8 @@ android {
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
+
     }
 }
 
@@ -50,5 +52,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    implementation("com.github.EudyContreras:Skeleton-Bones:1.4.5")
+    implementation(libs.skeleton.bones)
 }
