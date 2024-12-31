@@ -1,5 +1,7 @@
 package com.example.androidskeleton
 
+import android.graphics.Color
+import android.graphics.Color.*
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -39,8 +41,13 @@ class MainActivity : AppCompatActivity() {
                         enabled = true
                         allowSavedState = true
                         shimmerRayProperties.apply {
-                            shimmerRayThickness = 10f
+                            shimmerRayThickness = 50f
                             shimmerRayTilt = 0.3f
+                            shimmerRayCount = 5
+                            shimmerRaySpeedMultiplier = 1f
+                            shimmerRayAnimDuration = 1000
+                            skeletonBackgroundColor = null
+                            allowBoneGeneration = true
                         }
                     }
                 }
